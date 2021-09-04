@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <h1>Добро пожаловать!</h1>
+    <p>Чтобы воспользоваться онлайн-калькулятором, нажми на кнопку математического действия и далее следуй инструкциям
+        браузера.</p>
+
+</head>
+
+<body>
+    <button onclick="addition();">Сложить</button>
+    <button onclick="subtraction();">Вычесть</button>
+    <button onclick="multiplication();">Умножить</button>
+    <button onclick="division();">Разделить</button>
+
+    <script>
+        const button = document.querySelector('button');
+
+        function addition() {
+            let a = prompt("Первое число?", 1);
+            let b = prompt("Второе число?", 2);
+            alert(Number(a) + Number(b))
+        }
+
+        function subtraction() {
+            let a = prompt("Первое число?", 1);
+            let b = prompt("Второе число?", 2);
+            alert(Number(a) - Number(b))
+        }
+
+        function multiplication() {
+            let a = prompt("Первое число?", 1);
+            let b = prompt("Второе число?", 2);
+            alert(Number(a) * Number(b))
+        }
+
+        function division() {
+            let a = prompt("Первое число?", 1);
+            let b = prompt("Второе число?", 2);
+            alert(Number(a) / Number(b))
+        }
+    </script>
+
+</body>
+
+</html>
