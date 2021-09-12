@@ -12,12 +12,13 @@
 <body>
     <h1>Добро пожаловать на сайт!</h1>
 
-    <button>Нажми меня</button>
+    <button onclick="sayHello()">Нажми меня</button>
     <script>
-        const button = document.querySelector('button');
-        button.onclick = function () {
+        //const button = document.querySelector('button');
+
+        function sayHello() {
             let name = prompt('Как вас зовут?');
-            alert('Привет ' + name + ', рады видеть вас!');
+            alert(`Привет ${name} , рады видеть вас!`);
         }
     </script>
 
